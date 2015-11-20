@@ -9,6 +9,10 @@ gulp.task('default', function() {
 
 gulp.task('sass', function () {
   gulp.src('./frontend/public/scss/**/*.scss')
+      .pipe(sass({
+        includePaths: ['./frontend/public/scss'],
+        outputStyle: 'expanded'
+      }))
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('./frontend/public/css'));
 });
