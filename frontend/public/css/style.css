@@ -1,3 +1,9 @@
-body p {
-  font-size: 2em;
-  background-color: red; }
+.navbar {
+  background-color: #f8f8f8;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+  height: 80px;
+  line-height: 80px; }
+
+body {
+  background-color: #fff; }
