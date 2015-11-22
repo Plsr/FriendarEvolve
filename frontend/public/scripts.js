@@ -58,4 +58,8 @@ $(function() {
       $('.js-notifications').prepend(notification);
     });
   }
+
+  $('#notificationItem').click(function (){
+    $("#notificationMenu").toggle(200);
+  });
 });
