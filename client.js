@@ -43,7 +43,7 @@ app.set('views', __dirname + '/frontend/views');
 
 
 // ==========
-// Middleware 
+// Middleware
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -77,11 +77,11 @@ app.use(function(req, res, next) {
     return next();
   }
 
-  // If not, the user can only access /login and /signup
+  // If not, the user can only access /login, /signup and /
   // and will be redirected to /login, it he tried to
   // access anything else than /login or /signup.
   else {
-    if (req.originalUrl === '/login' || req.originalUrl === '/signup') {
+    if (req.originalUrl === '/login' || req.originalUrl === '/signup' || req.originalUrl === '/') {
       return next();
     }
     res.redirect('/login');
