@@ -51,6 +51,9 @@ h1 {
   font-weight: 700;
   font-size: 1.5em; }
 
+.relative {
+  position: relative; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?t9w9p0");
@@ -96,8 +99,7 @@ Navigation *
 .navbar-content {
   display: inline-block;
   float: right;
-  margin: 20px;
-  position: relative; }
+  margin: 20px; }
 
 .navbar-content a {
   text-decoration: none;
@@ -128,8 +130,8 @@ Navigation *
   display: none;
   background-color: #ffffff;
   position: absolute;
-  top: 46px;
-  right: 0;
+  top: 66px;
+  right: 20px;
   max-width: 400px;
   border: 1px solid #eeeeee;
   border-radius: 4px; }
