@@ -96,7 +96,8 @@ Navigation *
 .navbar-content {
   display: inline-block;
   float: right;
-  margin: 20px; }
+  margin: 20px;
+  position: relative; }
 
 .navbar-content a {
   text-decoration: none;
@@ -127,8 +128,9 @@ Navigation *
   display: none;
   background-color: #ffffff;
   position: absolute;
-  top: 66px;
-  right: 20px;
+  top: 46px;
+  right: 0;
+  max-width: 400px;
   border: 1px solid #eeeeee;
   border-radius: 4px; }
 

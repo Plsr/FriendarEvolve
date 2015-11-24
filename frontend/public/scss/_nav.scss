@@ -27,6 +27,7 @@ Navigation *
   display: inline-block;
   float: right;
   margin: 20px;
+  position: relative;
 
   a {
     text-decoration: none;
@@ -63,8 +64,9 @@ Navigation *
   display: none;
   background-color: $white;
   position: absolute;
-  top: 66px;
-  right: 20px;
+  top: 46px;
+  right: 0;
+  max-width: 400px;
   border: 1px solid $lightGrey;
   border-radius: 4px;
 
