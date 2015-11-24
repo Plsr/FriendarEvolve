@@ -131,7 +131,7 @@ Navigation *
   background-color: #ffffff;
   position: absolute;
   top: 66px;
-  right: 20px;
+  right: 10px;
   max-width: 400px;
   border: 1px solid #eeeeee;
   border-radius: 4px; }
@@ -154,3 +154,14 @@ Navigation *
 
 .dropdown-menu .is-unread a {
   background-color: #F0F7FF; }
+
+.dropdown-menu:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right: 5px;
+  top: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #eeeeee; }
