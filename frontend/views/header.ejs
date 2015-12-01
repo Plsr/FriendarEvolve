@@ -46,7 +46,16 @@
                 </ul>
               </li>
             <% } else { %>
-              <li><a href="#">Login</a></li>
+              <li><a href="#">Login</a>
+								<ul class="js-login dropdown-menu" id="login-menu">
+									<form method="POST" action="/login">
+										<label for="inputUserId">Username</label> 
+										<input type="text" id="inputUserId" name="name">
+										<label for="inputUserPasswd">Passwort</label>
+										<input type="text" id="inputUserPasswd" name="password" >	
+									</form>	
+								</ul>	
+							</li>
               <li><a href="/signup">Registrieren</a></li>
             <% } %>
           </ul>
